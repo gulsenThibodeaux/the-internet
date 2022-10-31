@@ -1,15 +1,12 @@
 package pages;
 
-import org.openqa.selenium.Point;
+
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.browserUtil;
 
-import java.awt.*;
-import java.awt.event.InputEvent;
 
 public class dragAndDropObjects extends browserUtil {
     public dragAndDropObjects(){ PageFactory.initElements(getDriver(),this);}

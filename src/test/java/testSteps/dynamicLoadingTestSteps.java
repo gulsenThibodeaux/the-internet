@@ -14,6 +14,6 @@ public class dynamicLoadingTestSteps extends dynamicLoadingObjects {
         clickStartButton();
         Assert.assertEquals(getHelloWorld(),expectedResult);
 
-        //tearDown();
+        tearDown();
     }
 }

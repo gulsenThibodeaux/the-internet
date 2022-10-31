@@ -12,11 +12,11 @@ import java.util.Set;
 public class newTapWindowObjects extends browserUtil {
     public newTapWindowObjects() {
         PageFactory.initElements(getDriver(), this);
-        //Test clicks on the Click Here link.
-               // + Test asserts that a new tab is opened with text New Window.
+                 //Test clicks on the Click Here link.
+               // Test asserts that a new tab is opened with text New Window.
     }
     @FindBy(xpath = "//*[@id='content']/div/a")
-    public WebElement newWindow;
+    private WebElement newWindow;
     public void newTab(){
         newWindow.click();
         Set<String> allTabs = getDriver().getWindowHandles();

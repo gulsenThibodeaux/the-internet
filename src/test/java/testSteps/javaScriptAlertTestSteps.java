@@ -15,6 +15,6 @@ public class javaScriptAlertTestSteps extends javaScriptAlertObjects {
         jsConfirm();
         setWaitTime();
         jsPromptMessage();
-      //  tearDown();
+        tearDown();
     }
 }

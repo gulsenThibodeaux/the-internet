@@ -12,22 +12,22 @@ import utils.driver;
 public class javaScriptAlertObjects extends browserUtil {
     public javaScriptAlertObjects(){
       PageFactory.initElements(getDriver(),this);
-//        Test Clicks on JS Alert Button.
-//        + Test asserts alert message.
-//                - Test clicks on JS confirm Button and clicks ok on alert.
-//    * Test asserts the alert message.
-//                + Test clicks on JS Prompt Button and types a message on Prompt.
-//                - Test asserts that the alert message contains the typed message.
+// Test Clicks on JS Alert Button.
+// Test asserts alert message.
+//  Test clicks on JS confirm Button and clicks ok on alert.
+//  Test asserts the alert message.
+//  Test clicks on JS Prompt Button and types a message on Prompt.
+//  Test asserts that the alert message contains the typed message.
     }
     @FindBy(xpath = "//*[@id='content']/div/ul/li[2]/button")
-    public WebElement confirm;
+    private WebElement confirm;
     @FindBy(xpath = "//*[@id='content']/div/ul/li[1]/button")
-    public WebElement jsAlert;
+    private WebElement jsAlert;
 
     @FindBy(xpath = "//*[@id='content']/div/ul/li[3]/button")
-    public WebElement jsPrompt;
+    private WebElement jsPrompt;
     @FindBy(xpath = "//*[@id='result']")
-    public WebElement result;
+    private WebElement result;
 
     public void jsAlertAccept(){
         ((JavascriptExecutor)getDriver()).executeScript("arguments[0].click()",jsAlert);

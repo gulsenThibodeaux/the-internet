@@ -12,6 +12,7 @@ public class newTapWindowTestSteps extends newTapWindowObjects {
         getDriver().get(getProperties("baseURL") + newTapWindowEndPoint);
         setWaitTime();
         newTab();
+        tearDown();
 
     }
 }

@@ -10,5 +10,9 @@ public class javaScriptErrorTestSteps extends javaScriptErrorObjects {
     public void scriptError() {
         getDriver().get(getProperties("baseURL") + javaScriptErrorEndPoint);
         setWaitTime();
+        jsError();
+
+
+        tearDown();
     }
 }

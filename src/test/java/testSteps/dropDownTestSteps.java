@@ -15,6 +15,7 @@ public class dropDownTestSteps extends dropDownObjects {
         Assert.assertEquals(dropDown(option1),option1);
         String option2="Option 2";
         Assert.assertEquals(dropDown(option2),option2);
+        tearDown();
     }
 
 

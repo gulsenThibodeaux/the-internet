@@ -12,7 +12,7 @@ public class notificationMessagerenderedTestSteps extends notificationMessageRen
         getDriver().get(getProperties("baseURL") + messageNotificationEndPoint);
         setWaitTime();
         messageBoard();
-       // tearDown();
+        tearDown();
 
     }
 }

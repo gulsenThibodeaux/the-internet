@@ -3,8 +3,6 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 import utils.browserUtil;
 
 
@@ -19,10 +17,10 @@ public class checkBoxesObjects extends browserUtil {
     private WebElement checkBox1;
     @FindBy(xpath = "(//input[@type='checkbox'])[2]")
     private WebElement checkBox2;
-    public WebElement getCheckBox1(){
+    protected WebElement getCheckBox1(){
         return checkBox1;
     }
-    public WebElement getCheckBox2(){
+    protected WebElement getCheckBox2(){
         return checkBox2;
     }
     public void clickCheckBox(WebElement element){

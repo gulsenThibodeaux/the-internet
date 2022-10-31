@@ -12,14 +12,14 @@ public class fileUploadObjects extends browserUtil {
 //    Test uses Upload Button or Drag and Drop to upload a file.
 //            + Test asserts that the file is uploaded.
 //
-        @FindBy(xpath = "//*[@id='file-upload']")
-    public WebElement chooseFile;
+    @FindBy(xpath = "//*[@id='file-upload']")
+    private WebElement chooseFile;
     @FindBy(id = "file-submit")
-    public WebElement uploadButton;
-    @FindBy(xpath = "//*[@id=\"content\"]/div/h3")
+    private WebElement uploadButton;
+    @FindBy(xpath = "//*[@id='content']/div/h3")
     private WebElement fileUploaded;
     public String chosenFile(){
-        String path="C:\\Users\\gulse\\Downloads\\some-file (4).txt";
+        String path="C:UsersgulseDownloadssome-file (4).txt";
         chooseFile.sendKeys(path);
         uploadButton.click();
         return fileUploaded.getText();

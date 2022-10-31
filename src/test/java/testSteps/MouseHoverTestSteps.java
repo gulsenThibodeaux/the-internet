@@ -13,6 +13,7 @@ public class MouseHoverTestSteps extends MouseHoverObjects {
         System.out.println(hoverOver("1"));
         System.out.println(hoverOver("2"));
         System.out.println(hoverOver("3"));
+        tearDown();
 
     }
 }

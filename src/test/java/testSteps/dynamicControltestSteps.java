@@ -25,6 +25,7 @@ public class dynamicControltestSteps extends dynamicControlsObjects {
         Assert.assertEquals(result(),inputBoxEnableExpected);
         clickDisableButton();
         Assert.assertEquals(result(),inputBoxDisableExpected);
+        tearDown();
 
     }
 }

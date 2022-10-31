@@ -13,7 +13,7 @@ public class floatingMenuTestSteps extends floatingMenuObjects {
         setWaitTime();
         Assert.assertTrue(scrollDown());
 
-       // tearDown();
+        tearDown();
 
     }
 }

@@ -12,7 +12,7 @@ public class dragAndDropSteps extends dragAndDropObjects {
         getDriver().get(getProperties("baseURL")+dragdropEndPoint);
         setWaitTime();
         dragDrop();
-       // tearDown();
+        tearDown();
 
 }
 

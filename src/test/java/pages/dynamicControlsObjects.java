@@ -45,7 +45,5 @@ public class dynamicControlsObjects extends browserUtil {
         return result.getText();
     }
 
-
-
     }
 

@@ -8,24 +8,19 @@ import utils.browserUtil;
 public class dynamicContectObjects extends browserUtil {
     public dynamicContectObjects() {
         PageFactory.initElements(getDriver(), this);
-//        Test refreshes the page a couple of times.
-//        + Test asserts that the content changes on each refresh.
+//    Test refreshes the page a couple of times.
+//    Test asserts that the content changes on each refresh.
     }
         @FindBy(xpath = "//*[@id='content']/div/p[2]/a")
-    public WebElement clickButton;
-    @FindBy(xpath = "//*[@id='content']/div[3]/div[2]")
-    public WebElement column;
+        private WebElement clickButton;
+        @FindBy(xpath = "//*[@id='content']/div[3]/div[2]")
+        private WebElement column;
     public boolean refresh(){
         String columnBefore =column.getText();
         clickButton.click();
         String columnAfter = column.getText();
         return columnBefore.equalsIgnoreCase(columnAfter);
     }
-
-
-       //Test refreshes the page a couple of times.
-        // Test asserts that the content changes on each refresh.
-
 
     }
 

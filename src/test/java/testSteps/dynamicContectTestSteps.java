@@ -13,5 +13,6 @@ public class dynamicContectTestSteps extends dynamicContectObjects {
         Assert.assertFalse(refresh());
         Assert.assertFalse(refresh());
         Assert.assertFalse(refresh());
+        tearDown();
     }
 }

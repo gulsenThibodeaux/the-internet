@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.browserUtil;
 
-public class loginObjects extends browserUtil {
+  public class loginObjects extends browserUtil {
     public loginObjects(){
         PageFactory.initElements(getDriver(),this);
     }
@@ -26,4 +26,5 @@ public class loginObjects extends browserUtil {
     public WebElement getLoginVerify(){
         return loginVerify;
     }
+
 }

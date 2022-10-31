@@ -12,13 +12,13 @@ public class dropDownObjects extends browserUtil {
         PageFactory.initElements(getDriver(), this);
     }
     @FindBy(xpath = "//*[@id='dropdown']")
-    public WebElement dropDownBox;
+    private WebElement dropDownBox;
     @FindBy(xpath = "//*[@id='dropdown']/option[2]")
-    public WebElement selectDown1;
+    private WebElement selectDown1;
     @FindBy(xpath = "//*[@id='dropdown']/option[3]")
-     public WebElement selectDown2;
+    private WebElement selectDown2;
 
-    //  * Test selects Option 1 and Option 2 from the drop down menu.
+    // Test selects Option 1 and Option 2 from the drop down menu.
     public String dropDown(String text){
         Select select=new Select(dropDownBox);
         String firstSelected = select.getFirstSelectedOption().getText();

@@ -11,7 +11,7 @@ public class fileUploadTestSteps extends fileUploadObjects {
     public void uploaded() {
         getDriver().get(getProperties("baseURL") + upLoadEndPoint);
         Assert.assertEquals(chosenFile(),expectedResult);
-     //   tearDown();
+        tearDown();
 
     }
 }

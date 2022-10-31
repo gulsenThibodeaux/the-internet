@@ -10,6 +10,7 @@ public class fileDownLoadTestSteps extends fileDownLoadObjects {
     public void fileDownload() {
         getDriver().get(getProperties("baseURL") + fileDownLoadEndPoint);
         clickFile();
+        tearDown();
 
 
         }
